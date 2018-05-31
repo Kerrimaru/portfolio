@@ -2,44 +2,44 @@
 <html>
   {% include head.html %}
   <body>
-    <div class='hero'>
-      <h2>Kerri Marusiak</h2>
-      <div class='tags'>
-        Web Developer | Dog-Lover | Woodworker
+    <div id='outer-welcome'>
+      <div class='welcome'>
+        <div id='welcome-text'>
+          <h2>Kerri Marusiak</h2>
+          <div class='tags'>
+            Dog-Lover | <span id='focus'>Web Developer</span> | Woodworker
+          </div>
+          <div id='arrow'>
+            <a href="#main"><i class="fas fa-chevron-down fa-3x"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class='profile'>
-      <p>I have recently completed an intensive four month web development programme at <a href="https://www.wegotcoders.com">We Got Coders,</a> and am excited to continue my path as a web developer. Through morning lectures, afternoon pair programming, and evening self study developed a solid understanding of Ruby and developed a strong interest in  database structures and Javascript, in particular React.</p>
-
-      <p>Having formerly trained as a cabinetmaker I worked to create precise, functional furniture and I’m excited to transfer these skills to coding. I became interested in coding as I saw the parallels between coding and cabinetmaking.</p>
-
-      <p>Hailing from the coastal/mountain city of Vancouver, Canada, I took the natural environment as inspiration and trained in the traditional craft of joinery. As a cabinetmaker</p>
-
-
-      <div class="contentarea">
-  <h1>
-    MDN - WebRTC: Still photo capture demo
-  </h1>
-  <p>
-    This example demonstrates how to set up a media stream using your built-in webcam, fetch an image from that stream, and create a PNG using that image.
-  </p>
-  <div class="camera">
-    <video id="video">Video stream not available.</video>
-    <button id="startbutton">Take photo</button> 
-  </div>
-  <canvas id="canvas">
-  </canvas>
-  <div class="output">
-    <img id="photo" alt="The screen capture will appear in this box."> 
-  </div>
-  <p>
-    Visit our article <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos"> Taking still photos with WebRTC</a> to learn more about the technologies used here.
-  </p>
-</div>
-
-      
-
     
+    <div id='main'>
+      <div id='profile' class='details'>
+        <p>I have recently completed an intensive four month web development programme at <a href="https://www.wegotcoders.com">We Got Coders,</a> and am excited to continue my path as a web developer. Through morning lectures, afternoon pair programming, and evening self study developed a solid understanding of Ruby and developed a strong interest in database structures and Javascript.</p><br>
+
+        <p>Having formerly trained as a cabinetmaker I worked to create precise, functional furniture and I’m excited to transfer these skills to coding. I became interested in coding as I saw the parallels between coding and cabinetmaking.</p><br>
+
+        <p>Hailing from the coastal/mountain city of Vancouver, Canada, I took the natural environment as inspiration and trained in the traditional craft of joinery.</p>
+      </div>
+      <div id='links' class='details'>
+        <div id='social-links'>
+          <h3>Links</h3>
+          <ul>
+            <li><a href='https://github.com/Kerrimaru'>GitHub</a></li>
+            <li><a href='https://uk.linkedin.com/in/kerri-marusiak-51b20515b'>LinkedIn</a></li>
+            <li><a href='#'>Woodworking Gallery</a></li>
+          </ul>
+        </div>
+        <div id='projects'>
+          <h3>Student Projects</h3>
+          <ul>
+            <li><a href='https://go-chef-kerri.herokuapp.com'>Go Chef</a></li>
+          </ul>
+      </div>
+      </div>
+    </div>
   </body>
 </html>
