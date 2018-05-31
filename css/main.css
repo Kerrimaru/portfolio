@@ -4,6 +4,18 @@ body {
   font-size: 18px;
 }
 
+#hi {
+  margin-left: 50px;
+  color: #07058e;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+  /*font-family: 'Satisfy', cursive;*/
+  /*font-family: 'Philosopher', sans-serif;*/
+  /*letter-spacing: 10px;*/
+  font-family: 'Lobster Two', cursive;
+}
+
 .welcome {
   background: url("/assets/bella_profile.jpg");
   background-size: cover;
