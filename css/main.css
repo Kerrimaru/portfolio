@@ -1,7 +1,5 @@
 body {
   box-sizing: border-box;
-  /*display: flex;
-  flex-direction: column;*/
   max-width: 100vw;
   font-size: 18px;
 }
@@ -10,61 +8,10 @@ body {
   background: url("/assets/bella_profile.jpg");
   background-size: cover;
   height: 100vh;
-  /*width: 100vw;*/
   max-width: 100vw;
 }
 
-
-/*#outer-welcome{
-  position: relative;
-}
-
-.welcome {
-  position: absolute;
-  z-index: -1;   
-  width: 100%;
-  height: 100%;
-  background: url("/assets/bella_profile.jpg");
-  background-size: cover;
-  opacity: 0.7;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}*/
-
-/*.welcome {
-  background: url("/assets/bella_profile.jpg");
-  opacity: .7; 
-  background-size: cover;
-  height: 100vh;
-}*/
-
-/*.welcome {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-}
-
-.welcome::before {
-  background: url("/assets/bella_profile.jpg");
-  content: "";
-  position: absolute;
-  top: 0; 
-  left: 0;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  opacity: .7; 
-  z-index: -1;
-  box-sizing: border-box;
-}*/
-
 #welcome-text {
-  /*display: inline-block;*/
-  /*margin-top: 65vh;*/
   height: 100vh;
   text-align: center;
   background: rgba(204, 204, 204, 0.5);
@@ -75,10 +22,8 @@ h2 {
   padding-top: 65vh;
   font-size: 85px;
   font-weight: bold;
-  /*padding-top: 60vh;*/
   margin-bottom: 20px;
   color: #0f0f0f;
-  /*text-align: center;*/
   letter-spacing: 6px;
   opacity: 1;
 }
@@ -105,7 +50,6 @@ i {
   font-size: 30px;
   color: #0f0f0f;
   font-style: italic;
-  /*margin-bottom: 10px;*/
 }
 
 #main {
@@ -120,7 +64,6 @@ h3 {
 
 .details {
   padding: 30px;
-
 }
 
 #profile {
@@ -135,6 +78,7 @@ h3 {
 a {
   text-decoration: none;
 }
+
 li {
   margin-bottom: 8px;
 }
