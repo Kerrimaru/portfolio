@@ -80,7 +80,7 @@ h3 {
 
 .details {
   width: auto;
-  font-size: 24px;
+  /*font-size: 24px;*/
   background: rgba(237, 242, 249, 0.8);
   padding: 30px;
 }
