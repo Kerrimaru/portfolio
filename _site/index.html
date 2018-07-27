@@ -24,6 +24,15 @@
     <div id='outer-welcome'>
       <div class='welcome'>
         <div id='welcome-text'>
+          <nav>
+
+            <ul>
+              <li id='nav-kerri'><a href="#outer-welcome">Kerri Marusiak</a></li>
+              <li><a href="#main">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a  href="#contact">Contact</a></li>
+            </ul>
+          </nav>
           <h1>Kerri Marusiak</h1>
           <div class='tags'>
             Dog-Lover | <a href="#main" id='focus'>Web Developer</a> | Woodworker
@@ -36,14 +45,16 @@
     </div>
     
     <div id='main'>
-      <div id='profile' class='details'>
-        <h3>About.</h3>
-        <p>Hello, my name is Kerri, and I have recently entered the world of coding! I took the plunge, and attended an intensive four month web development programme at <a href="https://www.wegotcoders.com">We Got Coders.</a> Through morning lectures, afternoon pair programming, and evening self study I have developed a solid understanding of Ruby and developed a strong interest in database structures and Javascript. I've completed the training phase, and am now excited to continue my path as a web developer by getting my foot in the door at a great company and putting my skills to work in the real world.</p>
+      <div id='profile' class='details-container'>
+        <div class='details-inner'>
+          <h3>About.</h3>
+          <p>Hello, my name is Kerri, and I have recently entered the world of coding! I took the plunge, and attended an intensive four month web development programme at <a href="https://www.wegotcoders.com">We Got Coders.</a> Through morning lectures, afternoon pair programming, and evening self study I have developed a solid understanding of Ruby and developed a strong interest in database structures and Javascript. I've completed the training phase, and am now excited to continue my path as a web developer by getting my foot in the door at a great company and putting my skills to work in the real world.</p>
 
-        <p>Having formerly trained as a cabinetmaker I worked to create precise, functional furniture. I developed an eye for design, and could fuss over even the smallest details of a project. Some might say I'm a bit particular, but I like to think that these skills will serve me well as I transition into my new career as a web developer.</p>
+          <p>Having formerly trained as a cabinetmaker I worked to create precise, functional furniture. I developed an eye for design, and could fuss over even the smallest details of a project. Some might say I'm a bit particular, but I like to think that these skills will serve me well as I transition into my new career as a web developer.</p>
+        </div>
       </div>
 
-      <div id='skills' class='details'>
+      <div id='skills' class='details-container'>
         <h3>Skills.</h3>
         <ul>
           <li>Ruby</li>
@@ -58,29 +69,61 @@
         </ul>
       </div>
 
-      <div id='work' class='details'>
-          <h3>Work.</h3>
-          <ul>
-            <li><a href='https://hidden-bastion-43962.herokuapp.com' target="_blank" >Memoria</a>
-              <p>Memoria is a solo project I have been working on. It is a bookmarking app which allows users at the click of a button store bookmarks into their homepage, complete with a screenshot of the page they are browsing, the title of the page, and optional user-added tags. This works via a chrome extension which can be installed in the browser, and makes the ajax request to populate the user's home page. Please sign up and take a peek!</p>
-            </li>
+      <div id='work' class='details-container'>
+        <br><br>
+        <h3>Work.</h3>
+        <ul>
+          <li><a href='https://hidden-bastion-43962.herokuapp.com' target="_blank" >Memoria</a>
+            <p>Memoria is a solo project I have been working on. It is a bookmarking app which allows users at the click of a button store bookmarks into their homepage, complete with a screenshot of the page they are browsing, the title of the page, and optional user-added tags. This works via a chrome extension which can be installed in the browser, and makes the ajax request to populate the user's home page. Please sign up and take a peek!</p>
+          </li>
 
-            <li><a href='https://go-chef-kerri.herokuapp.com' target="_blank" >Go Chef</a>
-              <p>Go Chef is a student project I worked on in a group of three. The app connects private chefs and caterers with clients who are looking to hire. Chefs can specify their culinary specialties in their bio, and also the location they are willing to work. Customers can search for chefs by skillset, and can leave reviews for chefs based on their experience.</p>
-            </li>
-            <li><a href='https://www.instagram.com/constructiveandco/' target="_blank" >Woodworking</a><p>Because it was a big part of my life, and hey, its interesting!</p>
-            </li>
-          </ul>
-        </div>
+          <li><a href='https://go-chef-kerri.herokuapp.com' target="_blank" >Go Chef</a>
+            <p>Go Chef is a student project I worked on in a group of three. The app connects private chefs and caterers with clients who are looking to hire. Chefs can specify their culinary specialties in their bio, and also the location they are willing to work. Customers can search for chefs by skillset, and can leave reviews for chefs based on their experience.</p>
+          </li>
+          <li><a href='https://www.instagram.com/constructiveandco/' target="_blank" >Woodworking</a><p>Because it was a big part of my life, and hey, its interesting!</p>
+          </li>
+        </ul>
+      </div>
 
-        <div id='contact' class='details'>
+      <div id='contact' class='details-container'>
+        <div class='details-inner'>
           <h3>Contact.</h3>
           <p>kerri.maru@gmail.com</p>
           <a href='https://github.com/Kerrimaru' target="_blank" ><i class="fab fa-github fa-2x"></i></a>
-            <a href='https://uk.linkedin.com/in/kerri-marusiak' target="_blank" ><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href='https://uk.linkedin.com/in/kerri-marusiak' target="_blank" ><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
-        <br>
-
       </div>
+      <br>
+
+    </div>
+    <script>
+      window.addEventListener("scroll",function(){
+        var target = document.querySelector("#nav-kerri");
+        var nav = document.querySelector("nav");
+        var anchors = document.querySelectorAll("nav a");
+        var kerr = document.querySelector("#nav-kerri a");
+        if(window.pageYOffset > 200){
+          target.style.display = "block";
+          nav.style.backgroundColor = "white";
+          nav.style.height = "50px";
+          nav.style.borderBottom = "2px solid black";
+          anchors.forEach(function(el){
+            el.style.color = "black";
+            el.style.fontSize = "18px";
+          });
+          kerr.style.fontSize = "25px";
+        }else if(window.pageYOffset < 200){
+          target.style.display = "none";
+          nav.style.background = "none";
+          nav.style.height = "75px";
+          nav.style.border = "none";
+          anchors.forEach(function(el){
+          el.style.color = "black";
+          el.style.fontSize = "25px";
+        });
+        }
+      },false);
+
+    </script>
   </body>
 </html>
