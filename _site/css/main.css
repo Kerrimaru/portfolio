@@ -18,10 +18,8 @@ h1 {
 h3 {
   font-size: 25px;
   margin-bottom: 30px;
-  font-style: italic;
   font-weight: bold;
   color: #141334;
-  text-decoration: underline;
 }
 
 p {
@@ -49,25 +47,24 @@ nav {
   top: 0;
   text-align: right;
   height: 30px;
-  transition: height 3s;
+  transition: all 1s;
 }
 
 nav li {
   letter-spacing: 1px;
   display: inline-block;
-  margin: 10px;
+  margin: 13px;
 }
 
 nav li a {
   /*font-size: 18px;*/
   color: black;
-  transition: height 3s;
+  transition: all 1s;
 }
 
 #nav-kerri{
   float: left;
-  display: none;
-}
+  display: none;}
 
 #arrow {
   text-align: center;
@@ -126,6 +123,11 @@ i {
   margin-top: 45px;
 }
 
+#work li a {
+  letter-spacing: 4px;
+  font-style: italic;
+}
+
 a {
   font-weight: bold;
   text-decoration: none;
@@ -176,5 +178,17 @@ li a {
   #focus {
     font-size: 20px;
   }
- 
+
+  .nav {
+    display: none;
+  }
+
+  #nav-kerri{
+    float: none;
+    text-align: center;
+  }
+  #nav-kerri{
+    letter-spacing: 5px;
+  }
+
 }
