@@ -1,0 +1,20 @@
+<nav>
+  <!-- <ul>
+    <li id="nav-kerri"><a href="/#outer-welcome">Kerri Marusiak</a></li>
+    <li class="nav"><a href="/#main">About</a></li>
+    <li class="nav"><a href="/#work">Work</a></li>
+    <li class="nav"><a href="/#contact">Contact</a></li>
+    <a href="/about.html">About</a>
+  </ul> -->
+  <ul>
+    {% for item in site.data.navigation %}
+    <li 
+        
+        {% if item.id %} id="{{item.id}}" {% endif %}
+        {% if item.class %} class="{{item.class}}" {% endif %}
+    >
+        <a href="{{ item.link }}" >{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,196 @@
+body {
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #494c4e;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  padding-top: 63vh;
+  font-size: 85px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0f0f0f;
+  letter-spacing: 6px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #141334;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.welcome {
+  background: url("/assets/images/bella_profile.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+#welcome-text {
+  height: 100vh;
+  text-align: center;
+  background: rgba(204, 204, 204, 0.55);
+}
+
+nav {
+  height: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: right;
+  height: 30px;
+  transition: all 1s;
+}
+
+nav li {
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 13px;
+}
+
+nav li a {
+  /*font-size: 18px;*/
+  color: black;
+  transition: all 1s;
+}
+
+#nav-kerri {
+  float: left;
+  display: none;
+}
+
+#arrow {
+  text-align: center;
+}
+
+i {
+  color: #07058e;
+}
+
+#focus {
+  font-family: "Oswald", sans-serif;
+  border-top: 4px solid;
+  color: #07058e;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.tags {
+  text-align: center;
+  font-size: 30px;
+  color: #0f0f0f;
+  font-style: italic;
+}
+
+/*#main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }*/
+
+.details-container {
+  display: table;
+  margin: auto;
+}
+
+.details-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#work,
+#profile {
+  margin-top: 50px;
+  height: 100vh;
+  width: 50vw;
+}
+
+#skills {
+  width: 50vw;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+#work h3 {
+  margin-top: 45px;
+}
+
+#work li a {
+  letter-spacing: 4px;
+  font-style: italic;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #141334;
+}
+
+li {
+  font-size: 20px;
+}
+
+li p {
+  margin-top: 10px;
+}
+
+li a {
+  font-size: 25px;
+  color: #07058e;
+}
+
+#contact {
+  height: 100vh;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#contact p {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+#contact h3 {
+  margin-top: 45px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+  #work,
+  #profile {
+    width: 70vw;
+  }
+  h1 {
+    font-size: 40px;
+    padding-top: 45vh;
+  }
+  .tags {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #focus {
+    font-size: 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #nav-kerri {
+    float: none;
+    text-align: center;
+  }
+  #nav-kerri {
+    letter-spacing: 5px;
+  }
+}
