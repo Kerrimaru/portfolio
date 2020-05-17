@@ -1,0 +1,15 @@
+- name: Kerri Marusiak
+  link: /#outer-welcome
+  id: nav-kerri
+- name: About
+  link: /#main
+  class: nav
+- name: Work
+  link: /#work
+  class: nav
+- name: Contact
+  link: /#contac
+  class: nav
+# - name: About V2
+#   link: /about.html
+#   class: nav
