@@ -2,13 +2,16 @@
   link: /#outer-welcome
   id: nav-kerri
 - name: About
-  link: /#main
+  link: /#profile
+  class: nav
+- name: Skills
+  link: /#skills
   class: nav
 - name: Work
   link: /#work
   class: nav
 - name: Contact
-  link: /#contac
+  link: /#contact
   class: nav
 # - name: About V2
 #   link: /about.html

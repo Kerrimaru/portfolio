@@ -1,12 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   color: #494c4e;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding-top: 63vh;
   font-size: 85px;
   font-weight: bold;
@@ -15,11 +19,19 @@ h1 {
   letter-spacing: 6px;
 }
 
+h2,
 h3 {
-  font-size: 25px;
   margin-bottom: 30px;
   font-weight: bold;
   color: #141334;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 p {
@@ -29,7 +41,7 @@ p {
 }
 
 .welcome {
-  background: url("/assets/images/bella_profile.jpg");
+  background: url('/assets/images/bella_profile.jpg');
   background-size: cover;
   height: 100vh;
 }
@@ -76,7 +88,7 @@ i {
 }
 
 #focus {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   border-top: 4px solid;
   color: #07058e;
   font-weight: bold;
@@ -91,14 +103,11 @@ i {
   font-style: italic;
 }
 
-/*#main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }*/
-
 .details-container {
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+  border-top: 1px solid green;
+  border-bottom: 1px solid magenta;
   display: table;
   margin: auto;
 }
@@ -110,19 +119,23 @@ i {
 
 #work,
 #profile {
-  margin-top: 50px;
-  height: 100vh;
   width: 50vw;
 }
 
 #skills {
   width: 50vw;
-  margin-top: 45px;
-  margin-bottom: 45px;
-}
-
-#work h3 {
-  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  svg {
+    width: 25px;
+    margin-right: 10px;
+  }
 }
 
 #work li a {
@@ -150,8 +163,8 @@ li a {
 }
 
 #contact {
-  height: 100vh;
-  margin-bottom: 15px;
+  // height: 100vh;
+  // margin-bottom: 15px;
   text-align: center;
 }
 
