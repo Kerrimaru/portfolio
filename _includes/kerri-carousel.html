@@ -1,0 +1,168 @@
+<div class="carousel_container">
+  <div class="carousel-navigation">
+    <div class="carousel-forward" onclick="goNext({{include.title}})"></div>
+    <div class="carousel-backward" onclick="goBack({{include.title}})"></div>
+  </div>
+  <div class="carousel" id="{{include.source}}-carousel">
+    {% for item in site.data[include.source].images %}
+    <div class="carousel-slide" id="{{include.source}}-slide{{forloop.index}}">
+      <!--  style="background-image: url({{item.image}})" -->
+      <img class="carousel-img" src="{{item.image}}" />
+      <p class="slide-caption">{{item.caption}}</p>
+    </div>
+
+    {% endfor %}
+  </div>
+  <div class="carousel__indicators" id="{{include.source}}-caro-indicators">
+    {% for item in site.data[include.source].images %}
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide({{ forloop.index }}, {{include.title}})"
+    ></label>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .carousel_container {
+    background-color: grey;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    /* border: 1px solid magenta !important; */
+  }
+
+  .carousel {
+    /* border: 1px solid green !important; */
+    display: flex;
+  }
+
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-img {
+    height: auto;
+    width: 550px;
+    padding: 50px 75px 100px;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-navigation div {
+    height: 30px;
+    width: 30px;
+    margin-top: -15px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-width: 5px 5px 0 0;
+    border-style: solid;
+    border-color: #07058e;
+    opacity: 0.35;
+    opacity: 1;
+    outline: 0;
+    z-index: 3;
+  }
+
+  .carousel-backward {
+    left: 27px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .carousel-forward {
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .carousel__indicators {
+    position: absolute;
+    bottom: 29px;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel__indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.35;
+    margin: 0 2.5px 0 2.5px;
+    background-color: #07058e;
+  }
+  .carousel__indicator:hover {
+    opacity: 0.75;
+  }
+  .carousel__indicator.active {
+    opacity: 0.75;
+  }
+  .slide-caption {
+    position: absolute;
+    bottom: 37px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<script>
+    function initCarousel(name) {
+        {% assign images_array = site.data[include.source].images | split: ", " %}
+        const length = {{ images_array.size }} /2;
+        appCarousel[name] = {timer: null, length: length, currentIndex: null};
+        goToSlide(1, name);
+    }
+
+    function goNext(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index + 1 > appCarousel[carouselName].length ? 1 : index + 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goBack(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index == 1 ? appCarousel[carouselName].length : appCarousel[carouselName].currentIndex - 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goToSlide(slideIndex, carouselName) {
+        clearTimeout(appCarousel[carouselName].timer)
+        appCarousel[carouselName].currentIndex = slideIndex;
+        const length = appCarousel[carouselName].length;
+        const activedot = document.querySelector('#' + carouselName + '-caro-indicators .active');
+        const dotsArr =  document.querySelectorAll('#' + carouselName + '-caro-indicators label');
+
+        if ( activedot) {
+           activedot.classList.remove('active')
+        }
+
+        var activeIndex;
+        for (activeIndex = 1; activeIndex < length; activeIndex++) {
+            if(dotsArr[activeIndex].classList.contains('active')) {
+                break;
+            };
+        }
+        dotsArr[slideIndex - 1].classList.add('active')
+        const slidesArr = document.querySelectorAll('#' + carouselName + '-carousel div');
+
+        slidesArr.forEach((el) => {
+            el.style.transform = `translateX(-${slideIndex - 1}00%)`;
+        });
+
+        appCarousel[carouselName].timer = setTimeout(function () {
+            goNext(carouselName)
+        }, 5000);
+  }
+
+  initCarousel({{include.title}});
+</script>

@@ -12,6 +12,10 @@
   <!-- <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css"> -->
   <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css"
+  />
 
   <link
     href="https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat:700|Oswald:500|Philosopher|Satisfy|Montserrat|Oxygen"
@@ -31,6 +35,9 @@
 </head>
 
   <body>
+    <script>
+      let appCarousel = {};
+    </script>
     <nav>
   <!-- <ul>
     <li id="nav-kerri"><a href="/#outer-welcome">Kerri Marusiak</a></li>
@@ -46,7 +53,7 @@
          id="nav-kerri" 
         
     >
-        <a href="/#outer-welcome" >Kerri Marusiak</a>
+        <a href="/#welcome" >Kerri Marusiak</a>
     </li>
     
     <li 
@@ -54,7 +61,15 @@
         
          class="nav" 
     >
-        <a href="/#main" >About</a>
+        <a href="/#profile" >About</a>
+    </li>
+    
+    <li 
+        
+        
+         class="nav" 
+    >
+        <a href="/#skills" >Skills</a>
     </li>
     
     <li 
@@ -70,7 +85,7 @@
         
          class="nav" 
     >
-        <a href="/#contac" >Contact</a>
+        <a href="/#contact" >Contact</a>
     </li>
     
   </ul>
@@ -79,31 +94,13 @@
 
     <script>
       window.addEventListener(
-        "scroll",
+        'scroll',
         function () {
-          var target = document.querySelector("#nav-kerri");
-          var nav = document.querySelector("nav");
-          var anchors = document.querySelectorAll("nav a");
-          var kerr = document.querySelector("#nav-kerri a");
+          var nav = document.querySelector('nav');
           if (window.pageYOffset > 200) {
-            target.style.display = "block";
-            nav.style.backgroundColor = "white";
-            nav.style.height = "50px";
-            nav.style.borderBottom = "2px solid black";
-            anchors.forEach(function (el) {
-              el.style.color = "black";
-              el.style.fontSize = "18px";
-            });
-            kerr.style.fontSize = "25px";
+            nav.classList.add('scroll');
           } else if (window.pageYOffset < 200) {
-            target.style.display = "none";
-            nav.style.background = "none";
-            nav.style.height = "75px";
-            nav.style.border = "none";
-            anchors.forEach(function (el) {
-              el.style.color = "black";
-              el.style.fontSize = "25px";
-            });
+            nav.classList.remove('scroll');
           }
         },
         false

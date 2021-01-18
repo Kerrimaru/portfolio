@@ -1,0 +1,15 @@
+  images:
+  - image: assets/images/touchnote/csv-1.png
+    caption: CSV address uploader
+  - image: assets/images/touchnote/csv-2.png
+    caption: Bulk address editor
+  - image: assets/images/touchnote/canvases.png
+    caption: Bella and my canvases
+  - image: assets/images/touchnote/text-sticker.png
+    caption: Text stickers feature
+  - image: assets/images/touchnote/address-book.png
+    caption: Address book with relationships feature
+  # - image: assets/images/touchnote/csv1.png
+  # - image: assets/images/touchnote/csv2.png
+  # - image: assets/images/touchnote/kerri-bella-canvas.png
+  # - image: assets/images/touchnote/text-sticker.png

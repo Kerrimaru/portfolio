@@ -1,0 +1,7 @@
+  images: 
+  - image: assets/images/judith/home.png
+    caption: All recipes displayed on login
+  - image: assets/images/judith/notes.png
+    caption: Notes and date made section
+  - image: assets/images/judith/new.png
+    caption: Adding a new recipe

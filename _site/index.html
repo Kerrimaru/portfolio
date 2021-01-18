@@ -12,6 +12,10 @@
   <!-- <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css"> -->
   <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css"
+  />
 
   <link
     href="https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat:700|Oswald:500|Philosopher|Satisfy|Montserrat|Oxygen"
@@ -31,6 +35,9 @@
 </head>
 
   <body>
+    <script>
+      let appCarousel = {};
+    </script>
     <nav>
   <!-- <ul>
     <li id="nav-kerri"><a href="/#outer-welcome">Kerri Marusiak</a></li>
@@ -46,7 +53,7 @@
          id="nav-kerri" 
         
     >
-        <a href="/#outer-welcome" >Kerri Marusiak</a>
+        <a href="/#welcome" >Kerri Marusiak</a>
     </li>
     
     <li 
@@ -54,7 +61,15 @@
         
          class="nav" 
     >
-        <a href="/#main" >About</a>
+        <a href="/#profile" >About</a>
+    </li>
+    
+    <li 
+        
+        
+         class="nav" 
+    >
+        <a href="/#skills" >Skills</a>
     </li>
     
     <li 
@@ -70,120 +85,1008 @@
         
          class="nav" 
     >
-        <a href="/#contac" >Contact</a>
+        <a href="/#contact" >Contact</a>
     </li>
     
   </ul>
 </nav>
- <div id="outer-welcome">
-  <div class="welcome">
-    <div id="welcome-text">
-      <!-- <nav>
-        <ul>
-          <li id="nav-kerri"><a href="#outer-welcome">Kerri Marusiak</a></li>
-          <li class="nav"><a href="#main">About</a></li>
-          <li class="nav"><a href="#work">Work</a></li>
-          <li class="nav"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav> -->
-      <h1>Kerri Marusiak</h1>
-      <div class="tags">
-        Dog-Lover | <a href="#main" id="focus">Web Developer</a> | Woodworker
-      </div>
-      <div id="arrow">
-        <a href="#main"><i class="fas fa-chevron-down fa-3x"></i></a>
-      </div>
+ <div id="welcome">
+  <div class="text">
+    <h1>Kerri Marusiak</h1>
+    <div class="tags">
+      Dog-Lover | <a href="#main" id="focus">Web Developer</a> | Woodworker
+    </div>
+    <div id="arrow">
+      <a href="#main"><i class="fas fa-chevron-down fa-3x"></i></a>
     </div>
   </div>
 </div>
 
 <div id="main">
   <div id="profile" class="details-container">
-    <div class="details-inner">
-      <br /><br />
-      <p>
-        Hello, my name is Kerri, and I have recently entered the world of
-        coding! I took the plunge, and attended an intensive four month web
-        development programme at
-        <a href="https://www.wegotcoders.com">We Got Coders.</a> Through morning
-        lectures, afternoon pair programming, and evening self study I have
-        developed a solid understanding of Ruby and developed a strong interest
-        in database structures and Javascript. I've completed the training
-        phase, and am now excited to continue my path as a web developer by
-        getting my foot in the door at a great company and putting my skills to
-        work in the real world.
-      </p>
+    <h2>Hello!</h2>
 
-      <p>
-        Having formerly trained as a cabinetmaker I worked to create precise,
-        functional furniture. I developed an eye for design, and could fuss over
-        even the smallest details of a project. Some might say I'm a bit
-        particular, but I like to think that these skills will serve me well as
-        I transition into my new career as a web developer.
-      </p>
-    </div>
+    <p>
+      <span class="lead-in"
+        >My name is <b>Kerri,</b> I am a Javascript web developer</span
+      >
+      based in London. I care a lot about building nice things that work well!
+    </p>
+
+    <p>
+      Having formerly trained as a cabinetmaker I worked to create
+      <b>precise, functional</b> furniture. I developed an eye for
+      <b>design,</b> and could fuss over even the smallest <b>details</b> of a
+      project. I like to think that building websites is not so different from
+      building furniture, and I try to employ the ethos of cabinetmaking to
+      building websites.
+    </p>
   </div>
 
   <div id="skills" class="details-container">
-    <h3>Skills.</h3>
-    <ul>
-      <li>Ruby</li>
-      <li>Ruby on Rails</li>
-      <li>JavaScript</li>
-      <li>HTML, CSS, SASS</li>
-      <li>Git</li>
-      <li>Databases with Postgres and SQLite3</li>
-      <li>Testing with RSpec, MiniTest, and Capybara</li>
-      <li>React basics</li>
-      <li></li>
-    </ul>
+    <div>
+      <h2>Skills.</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>Angular 2+</li>
+        <li>TypeScript</li>
+        <li>HTML, SCSS</li>
+        <li>Ruby</li>
+        <li>Ruby on Rails</li>
+        <li>Databases with Postgres and SQL3</li>
+        <li>Jira, Confluence, Monday</li>
+      </ul>
+    </div>
   </div>
 
   <div id="work" class="details-container">
     <br /><br />
     <h3>Work.</h3>
-    <ul>
-      <li>
-        <a href="https://hidden-bastion-43962.herokuapp.com" target="_blank"
-          >Memoria</a
-        >
-        <p>
-          Memoria is a solo project I have been working on. It is a bookmarking
-          app which allows users at the click of a button store bookmarks into
-          their homepage, complete with a screenshot of the page they are
-          browsing, the title of the page, and optional user-added tags. This
-          works via a chrome extension which can be installed in the browser,
-          and makes the ajax request to populate the user's home page. Please
-          sign up and take a peek!
-        </p>
-      </li>
 
-      <li>
-        <a href="https://go-chef-kerri.herokuapp.com" target="_blank"
-          >Go Chef</a
-        >
-        <p>
-          Go Chef is a student project I worked on in a group of three. The app
-          connects private chefs and caterers with clients who are looking to
-          hire. Chefs can specify their culinary specialties in their bio, and
-          also the location they are willing to work. Customers can search for
-          chefs by skillset, and can leave reviews for chefs based on their
-          experience.
-        </p>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/constructiveandco/" target="_blank"
-          >Woodworking</a
-        >
-        <p>Because it was a big part of my life, and hey, its interesting!</p>
-      </li>
-    </ul>
+    
+    <div class="work" id="touchnote">
+       <div>
+  <a href="https://app.touchnote.com/" target="_blank">
+    <img class="work-logo" src="assets/images/logo.png" style="width: 80px" />
+    <p>app.touchnote.com</p></a
+  >
+
+  <p>
+    <span class="lead-in"
+      >I was hired at <b class="app-title">TouchNote</b> in 2018,</span
+    >
+    as a <b>Frontend Angular 2+</b> developer. From
+    <b>regular maintenance and performance improvements</b>, developing
+    <b>new features</b> from scratch, starting an
+    <b>internal web app wiki</b> to document the product flows and logic, and
+    <b>deploying regular and well-documented releases,</b> I had a hand in many
+    varied aspects of the web app.
+  </p>
+
+  <p>
+    Arguably my greatest achievment at TouchNote, however, was inspiring the new
+    <b>Pet Policy</b> to be written to allow dogs in the office and the
+    subsequent promotion of my dog Bella to <b>Lead Doggo</b>. She even got her
+    own canvas on the company wall!
+  </p>
+
+  <div>
+    <div class="carousel_container">
+  <div class="carousel-navigation">
+    <div class="carousel-forward" onclick="goNext('touchnote')"></div>
+    <div class="carousel-backward" onclick="goBack('touchnote')"></div>
+  </div>
+  <div class="carousel" id="touchnote-carousel">
+    
+    <div class="carousel-slide" id="touchnote-slide1">
+      <!--  style="background-image: url(assets/images/touchnote/csv-1.png)" -->
+      <img class="carousel-img" src="assets/images/touchnote/csv-1.png" />
+      <p class="slide-caption">CSV address uploader</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="touchnote-slide2">
+      <!--  style="background-image: url(assets/images/touchnote/csv-2.png)" -->
+      <img class="carousel-img" src="assets/images/touchnote/csv-2.png" />
+      <p class="slide-caption">Bulk address editor</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="touchnote-slide3">
+      <!--  style="background-image: url(assets/images/touchnote/canvases.png)" -->
+      <img class="carousel-img" src="assets/images/touchnote/canvases.png" />
+      <p class="slide-caption">Bella and my canvases</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="touchnote-slide4">
+      <!--  style="background-image: url(assets/images/touchnote/text-sticker.png)" -->
+      <img class="carousel-img" src="assets/images/touchnote/text-sticker.png" />
+      <p class="slide-caption">Text stickers feature</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="touchnote-slide5">
+      <!--  style="background-image: url(assets/images/touchnote/address-book.png)" -->
+      <img class="carousel-img" src="assets/images/touchnote/address-book.png" />
+      <p class="slide-caption">Address book with relationships feature</p>
+    </div>
+
+    
+  </div>
+  <div class="carousel__indicators" id="touchnote-caro-indicators">
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(1, 'touchnote')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(2, 'touchnote')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(3, 'touchnote')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(4, 'touchnote')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(5, 'touchnote')"
+    ></label>
+    
+  </div>
+</div>
+
+<style>
+  .carousel_container {
+    background-color: grey;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    /* border: 1px solid magenta !important; */
+  }
+
+  .carousel {
+    /* border: 1px solid green !important; */
+    display: flex;
+  }
+
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-img {
+    height: auto;
+    width: 550px;
+    padding: 50px 75px 100px;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-navigation div {
+    height: 30px;
+    width: 30px;
+    margin-top: -15px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-width: 5px 5px 0 0;
+    border-style: solid;
+    border-color: #07058e;
+    opacity: 0.35;
+    opacity: 1;
+    outline: 0;
+    z-index: 3;
+  }
+
+  .carousel-backward {
+    left: 27px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .carousel-forward {
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .carousel__indicators {
+    position: absolute;
+    bottom: 29px;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel__indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.35;
+    margin: 0 2.5px 0 2.5px;
+    background-color: #07058e;
+  }
+  .carousel__indicator:hover {
+    opacity: 0.75;
+  }
+  .carousel__indicator.active {
+    opacity: 0.75;
+  }
+  .slide-caption {
+    position: absolute;
+    bottom: 37px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<script>
+    function initCarousel(name) {
+        
+        const length = 10 /2;
+        appCarousel[name] = {timer: null, length: length, currentIndex: null};
+        goToSlide(1, name);
+    }
+
+    function goNext(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index + 1 > appCarousel[carouselName].length ? 1 : index + 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goBack(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index == 1 ? appCarousel[carouselName].length : appCarousel[carouselName].currentIndex - 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goToSlide(slideIndex, carouselName) {
+        clearTimeout(appCarousel[carouselName].timer)
+        appCarousel[carouselName].currentIndex = slideIndex;
+        const length = appCarousel[carouselName].length;
+        const activedot = document.querySelector('#' + carouselName + '-caro-indicators .active');
+        const dotsArr =  document.querySelectorAll('#' + carouselName + '-caro-indicators label');
+
+        if ( activedot) {
+           activedot.classList.remove('active')
+        }
+
+        var activeIndex;
+        for (activeIndex = 1; activeIndex < length; activeIndex++) {
+            if(dotsArr[activeIndex].classList.contains('active')) {
+                break;
+            };
+        }
+        dotsArr[slideIndex - 1].classList.add('active')
+        const slidesArr = document.querySelectorAll('#' + carouselName + '-carousel div');
+
+        slidesArr.forEach((el) => {
+            el.style.transform = `translateX(-${slideIndex - 1}00%)`;
+        });
+
+        appCarousel[carouselName].timer = setTimeout(function () {
+            goNext(carouselName)
+        }, 5000);
+  }
+
+  initCarousel('touchnote');
+</script>
+
+  </div>
+</div>
+
+    </div>
+    
+    <div class="work" id="judith">
+      
+      <h3>Judith's Kitchen</h3>
+       <a href="http://recipe-hole.firebaseapp.com/" target="_blank">
+  <img class="work-logo" src="assets/images/hole-logo.png" width="50px" />
+  <p>recipe-hole.firebaseapp.com</p></a
+>
+
+<div>
+  <p>
+    <span class="lead-in"
+      ><b class="app-title">Judith's Kitchen</b>, aka Recipe Hole, is a personal
+      project</span
+    >
+    which I initially started back when I was first learning <b>Angular</b> and
+    <b>Typescript.</b> The app is hosted on <b>Firebase,</b> and uses Firebase's
+    <b>realtime database</b> to store recipe data, as well as Firebase
+    <b>authentication.</b> I put it on the shelf for a couple of years until
+    recently, when my frustration with losing track of my favourite recipes
+    mixed with my dissatisfaction with other recipe sites' data tracking, ads,
+    and long-winded blog posts made me pick this up again.
+  </p>
+
+  <p>
+    I added a lot of features, including <b>favouriting</b> and
+    <b>search</b> functionality, <b>user notes</b> and
+    <b>date made</b> functionality, and a funky copy paste tool for quickly
+    adding ingredients. It has evolved from a basic skills-developing piece into
+    a much more well rounded, and useful app which I do currently use
+    frequently. I'm still adding to it whenever I find some time.
+  </p>
+
+  <div id="judith-images">
+    <div class="carousel_container">
+  <div class="carousel-navigation">
+    <div class="carousel-forward" onclick="goNext('judith')"></div>
+    <div class="carousel-backward" onclick="goBack('judith')"></div>
+  </div>
+  <div class="carousel" id="judith-carousel">
+    
+    <div class="carousel-slide" id="judith-slide1">
+      <!--  style="background-image: url(assets/images/judith/home.png)" -->
+      <img class="carousel-img" src="assets/images/judith/home.png" />
+      <p class="slide-caption">All recipes displayed on login</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="judith-slide2">
+      <!--  style="background-image: url(assets/images/judith/notes.png)" -->
+      <img class="carousel-img" src="assets/images/judith/notes.png" />
+      <p class="slide-caption">Notes and date made section</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="judith-slide3">
+      <!--  style="background-image: url(assets/images/judith/new.png)" -->
+      <img class="carousel-img" src="assets/images/judith/new.png" />
+      <p class="slide-caption">Adding a new recipe</p>
+    </div>
+
+    
+  </div>
+  <div class="carousel__indicators" id="judith-caro-indicators">
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(1, 'judith')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(2, 'judith')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(3, 'judith')"
+    ></label>
+    
+  </div>
+</div>
+
+<style>
+  .carousel_container {
+    background-color: grey;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    /* border: 1px solid magenta !important; */
+  }
+
+  .carousel {
+    /* border: 1px solid green !important; */
+    display: flex;
+  }
+
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-img {
+    height: auto;
+    width: 550px;
+    padding: 50px 75px 100px;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-navigation div {
+    height: 30px;
+    width: 30px;
+    margin-top: -15px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-width: 5px 5px 0 0;
+    border-style: solid;
+    border-color: #07058e;
+    opacity: 0.35;
+    opacity: 1;
+    outline: 0;
+    z-index: 3;
+  }
+
+  .carousel-backward {
+    left: 27px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .carousel-forward {
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .carousel__indicators {
+    position: absolute;
+    bottom: 29px;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel__indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.35;
+    margin: 0 2.5px 0 2.5px;
+    background-color: #07058e;
+  }
+  .carousel__indicator:hover {
+    opacity: 0.75;
+  }
+  .carousel__indicator.active {
+    opacity: 0.75;
+  }
+  .slide-caption {
+    position: absolute;
+    bottom: 37px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<script>
+    function initCarousel(name) {
+        
+        const length = 6 /2;
+        appCarousel[name] = {timer: null, length: length, currentIndex: null};
+        goToSlide(1, name);
+    }
+
+    function goNext(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index + 1 > appCarousel[carouselName].length ? 1 : index + 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goBack(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index == 1 ? appCarousel[carouselName].length : appCarousel[carouselName].currentIndex - 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goToSlide(slideIndex, carouselName) {
+        clearTimeout(appCarousel[carouselName].timer)
+        appCarousel[carouselName].currentIndex = slideIndex;
+        const length = appCarousel[carouselName].length;
+        const activedot = document.querySelector('#' + carouselName + '-caro-indicators .active');
+        const dotsArr =  document.querySelectorAll('#' + carouselName + '-caro-indicators label');
+
+        if ( activedot) {
+           activedot.classList.remove('active')
+        }
+
+        var activeIndex;
+        for (activeIndex = 1; activeIndex < length; activeIndex++) {
+            if(dotsArr[activeIndex].classList.contains('active')) {
+                break;
+            };
+        }
+        dotsArr[slideIndex - 1].classList.add('active')
+        const slidesArr = document.querySelectorAll('#' + carouselName + '-carousel div');
+
+        slidesArr.forEach((el) => {
+            el.style.transform = `translateX(-${slideIndex - 1}00%)`;
+        });
+
+        appCarousel[carouselName].timer = setTimeout(function () {
+            goNext(carouselName)
+        }, 5000);
+  }
+
+  initCarousel('judith');
+</script>
+
+  </div>
+</div>
+
+    </div>
+    
+    <div class="work" id="memoria">
+      
+      <h3>Memoria</h3>
+       <a href="https://hidden-bastion-43962.herokuapp.com" target="_blank">
+  <img class="work-logo" src="assets/images/memoria.png" style="width: 80px" />
+  <p>hidden-bastion-43962.herokuapp.com</p></a
+>
+<p>
+  <span class="lead-in"><b>Memoria</b> was my final project</span> I developed
+  for my coding bootcamp. I built the app and the <b>chrome extension</b> myself
+  from scratch, with a <b>rails</b> backend and
+  <b>vanilla javascript</b> frontend, and hosting on
+  <b>Heroku.</b>
+</p>
+<p>
+  I am guilty of always having a million tabs open at once, because I fear that
+  if I close them I will never remember to come back to that page again. Enter
+  <b class="app-title">Memoria!</b> I built a bookmarking app which
+  <b>takes a screenshot</b> of the page you are viewing to give you that visual
+  memory jog, and saves it as a bookmark to your Memoria homescreen. You can
+  then <b>add tags</b> and <b>edit</b> the entry, as well as
+  <b>sort, search,</b> and <b>filter</b> all entires, in order to find that tab
+  you were looking for.
+</p>
+
+<div id="memoria-images">
+  <div class="carousel_container">
+  <div class="carousel-navigation">
+    <div class="carousel-forward" onclick="goNext('memoria')"></div>
+    <div class="carousel-backward" onclick="goBack('memoria')"></div>
+  </div>
+  <div class="carousel" id="memoria-carousel">
+    
+    <div class="carousel-slide" id="memoria-slide1">
+      <!--  style="background-image: url(assets/images/memoria/mem-home.png)" -->
+      <img class="carousel-img" src="assets/images/memoria/mem-home.png" />
+      <p class="slide-caption">Memoria homepage displaying bookmarks</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="memoria-slide2">
+      <!--  style="background-image: url(assets/images/memoria/mem-ext.png)" -->
+      <img class="carousel-img" src="assets/images/memoria/mem-ext.png" />
+      <p class="slide-caption">Memoria in the extension drawer</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="memoria-slide3">
+      <!--  style="background-image: url(assets/images/memoria/mem-save.png)" -->
+      <img class="carousel-img" src="assets/images/memoria/mem-save.png" />
+      <p class="slide-caption">Simple alert and bookmark added to homepage</p>
+    </div>
+
+    
+  </div>
+  <div class="carousel__indicators" id="memoria-caro-indicators">
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(1, 'memoria')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(2, 'memoria')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(3, 'memoria')"
+    ></label>
+    
+  </div>
+</div>
+
+<style>
+  .carousel_container {
+    background-color: grey;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    /* border: 1px solid magenta !important; */
+  }
+
+  .carousel {
+    /* border: 1px solid green !important; */
+    display: flex;
+  }
+
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-img {
+    height: auto;
+    width: 550px;
+    padding: 50px 75px 100px;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-navigation div {
+    height: 30px;
+    width: 30px;
+    margin-top: -15px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-width: 5px 5px 0 0;
+    border-style: solid;
+    border-color: #07058e;
+    opacity: 0.35;
+    opacity: 1;
+    outline: 0;
+    z-index: 3;
+  }
+
+  .carousel-backward {
+    left: 27px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .carousel-forward {
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .carousel__indicators {
+    position: absolute;
+    bottom: 29px;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel__indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.35;
+    margin: 0 2.5px 0 2.5px;
+    background-color: #07058e;
+  }
+  .carousel__indicator:hover {
+    opacity: 0.75;
+  }
+  .carousel__indicator.active {
+    opacity: 0.75;
+  }
+  .slide-caption {
+    position: absolute;
+    bottom: 37px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<script>
+    function initCarousel(name) {
+        
+        const length = 6 /2;
+        appCarousel[name] = {timer: null, length: length, currentIndex: null};
+        goToSlide(1, name);
+    }
+
+    function goNext(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index + 1 > appCarousel[carouselName].length ? 1 : index + 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goBack(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index == 1 ? appCarousel[carouselName].length : appCarousel[carouselName].currentIndex - 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goToSlide(slideIndex, carouselName) {
+        clearTimeout(appCarousel[carouselName].timer)
+        appCarousel[carouselName].currentIndex = slideIndex;
+        const length = appCarousel[carouselName].length;
+        const activedot = document.querySelector('#' + carouselName + '-caro-indicators .active');
+        const dotsArr =  document.querySelectorAll('#' + carouselName + '-caro-indicators label');
+
+        if ( activedot) {
+           activedot.classList.remove('active')
+        }
+
+        var activeIndex;
+        for (activeIndex = 1; activeIndex < length; activeIndex++) {
+            if(dotsArr[activeIndex].classList.contains('active')) {
+                break;
+            };
+        }
+        dotsArr[slideIndex - 1].classList.add('active')
+        const slidesArr = document.querySelectorAll('#' + carouselName + '-carousel div');
+
+        slidesArr.forEach((el) => {
+            el.style.transform = `translateX(-${slideIndex - 1}00%)`;
+        });
+
+        appCarousel[carouselName].timer = setTimeout(function () {
+            goNext(carouselName)
+        }, 5000);
+  }
+
+  initCarousel('memoria');
+</script>
+
+</div>
+<!-- <p>
+  Memoria allows users at the click of a button store bookmarks into their
+  homepage, complete with a screenshot of the page they are browsing to help jog
+  their memory, the title of the page, and optional user-added tags. This works
+  via a chrome extension which can be installed in the browser, and makes the
+  ajax request to populate the user's home page.
+</p> -->
+
+    </div>
+    
+    <div class="work" id="woodworking">
+      
+      <h3>Woodworking</h3>
+       <div class="constructive-logo">
+  <a href="https://www.instagram.com/constructiveandco/" target="_blank"
+    ><img class="work-logo" src="assets/constructive.svg" style="width: 80px" />
+    <p>instagram.com/constructiveandco</p></a
+  >
+</div>
+
+<p>
+  Although I no longer am a woodworker by day, I still stay in touch with the
+  guys I worked for at <b class="app-title">Constructive & Co.</b> Check out
+  more of their work above, they make great stuff! Below are some of my other
+  past projects.
+</p>
+
+<div id="wood-images">
+  <div class="carousel_container">
+  <div class="carousel-navigation">
+    <div class="carousel-forward" onclick="goNext('wood')"></div>
+    <div class="carousel-backward" onclick="goBack('wood')"></div>
+  </div>
+  <div class="carousel" id="wood-carousel">
+    
+    <div class="carousel-slide" id="wood-slide1">
+      <!--  style="background-image: url(assets/images/wood/pews.jpg)" -->
+      <img class="carousel-img" src="assets/images/wood/pews.jpg" />
+      <p class="slide-caption">Church furnishings</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="wood-slide2">
+      <!--  style="background-image: url(assets/images/wood/cab2.png)" -->
+      <img class="carousel-img" src="assets/images/wood/cab2.png" />
+      <p class="slide-caption">Walnut whiskey cabinet</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="wood-slide3">
+      <!--  style="background-image: url(assets/images/wood/lazy.jpg)" -->
+      <img class="carousel-img" src="assets/images/wood/lazy.jpg" />
+      <p class="slide-caption">Bella helping out in the shop</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="wood-slide4">
+      <!--  style="background-image: url(assets/images/wood/pew.jpg)" -->
+      <img class="carousel-img" src="assets/images/wood/pew.jpg" />
+      <p class="slide-caption">Oak church pew</p>
+    </div>
+
+    
+  </div>
+  <div class="carousel__indicators" id="wood-caro-indicators">
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(1, 'wood')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(2, 'wood')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(3, 'wood')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(4, 'wood')"
+    ></label>
+    
+  </div>
+</div>
+
+<style>
+  .carousel_container {
+    background-color: grey;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    /* border: 1px solid magenta !important; */
+  }
+
+  .carousel {
+    /* border: 1px solid green !important; */
+    display: flex;
+  }
+
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-img {
+    height: auto;
+    width: 550px;
+    padding: 50px 75px 100px;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  }
+
+  .carousel-navigation div {
+    height: 30px;
+    width: 30px;
+    margin-top: -15px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-width: 5px 5px 0 0;
+    border-style: solid;
+    border-color: #07058e;
+    opacity: 0.35;
+    opacity: 1;
+    outline: 0;
+    z-index: 3;
+  }
+
+  .carousel-backward {
+    left: 27px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .carousel-forward {
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .carousel__indicators {
+    position: absolute;
+    bottom: 29px;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel__indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.35;
+    margin: 0 2.5px 0 2.5px;
+    background-color: #07058e;
+  }
+  .carousel__indicator:hover {
+    opacity: 0.75;
+  }
+  .carousel__indicator.active {
+    opacity: 0.75;
+  }
+  .slide-caption {
+    position: absolute;
+    bottom: 37px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<script>
+    function initCarousel(name) {
+        
+        const length = 8 /2;
+        appCarousel[name] = {timer: null, length: length, currentIndex: null};
+        goToSlide(1, name);
+    }
+
+    function goNext(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index + 1 > appCarousel[carouselName].length ? 1 : index + 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goBack(carouselName){
+        const index = appCarousel[carouselName].currentIndex;
+        const next = index == 1 ? appCarousel[carouselName].length : appCarousel[carouselName].currentIndex - 1;
+        goToSlide(next, carouselName);
+    }
+
+    function goToSlide(slideIndex, carouselName) {
+        clearTimeout(appCarousel[carouselName].timer)
+        appCarousel[carouselName].currentIndex = slideIndex;
+        const length = appCarousel[carouselName].length;
+        const activedot = document.querySelector('#' + carouselName + '-caro-indicators .active');
+        const dotsArr =  document.querySelectorAll('#' + carouselName + '-caro-indicators label');
+
+        if ( activedot) {
+           activedot.classList.remove('active')
+        }
+
+        var activeIndex;
+        for (activeIndex = 1; activeIndex < length; activeIndex++) {
+            if(dotsArr[activeIndex].classList.contains('active')) {
+                break;
+            };
+        }
+        dotsArr[slideIndex - 1].classList.add('active')
+        const slidesArr = document.querySelectorAll('#' + carouselName + '-carousel div');
+
+        slidesArr.forEach((el) => {
+            el.style.transform = `translateX(-${slideIndex - 1}00%)`;
+        });
+
+        appCarousel[carouselName].timer = setTimeout(function () {
+            goNext(carouselName)
+        }, 5000);
+  }
+
+  initCarousel('wood');
+</script>
+
+</div>
+
+    </div>
+    
   </div>
 
   <div id="contact" class="details-container">
-    <div class="details-inner">
-      <h3>Contact.</h3>
-      <p>kerri.maru@gmail.com</p>
+    <h2>Contact.</h2>
+    <p>kerri.maru@gmail.com</p>
+    <div>
       <a href="https://github.com/Kerrimaru" target="_blank"
         ><i class="fab fa-github fa-2x"></i
       ></a>
@@ -192,36 +1095,17 @@
       ></a>
     </div>
   </div>
-  <br />
 </div>
 
     <script>
       window.addEventListener(
-        "scroll",
+        'scroll',
         function () {
-          var target = document.querySelector("#nav-kerri");
-          var nav = document.querySelector("nav");
-          var anchors = document.querySelectorAll("nav a");
-          var kerr = document.querySelector("#nav-kerri a");
+          var nav = document.querySelector('nav');
           if (window.pageYOffset > 200) {
-            target.style.display = "block";
-            nav.style.backgroundColor = "white";
-            nav.style.height = "50px";
-            nav.style.borderBottom = "2px solid black";
-            anchors.forEach(function (el) {
-              el.style.color = "black";
-              el.style.fontSize = "18px";
-            });
-            kerr.style.fontSize = "25px";
+            nav.classList.add('scroll');
           } else if (window.pageYOffset < 200) {
-            target.style.display = "none";
-            nav.style.background = "none";
-            nav.style.height = "75px";
-            nav.style.border = "none";
-            anchors.forEach(function (el) {
-              el.style.color = "black";
-              el.style.fontSize = "25px";
-            });
+            nav.classList.remove('scroll');
           }
         },
         false
