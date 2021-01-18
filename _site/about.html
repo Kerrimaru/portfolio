@@ -35,6 +35,9 @@
 </head>
 
   <body>
+    <script>
+      let appCarousel = {};
+    </script>
     <nav>
   <!-- <ul>
     <li id="nav-kerri"><a href="/#outer-welcome">Kerri Marusiak</a></li>
@@ -50,7 +53,7 @@
          id="nav-kerri" 
         
     >
-        <a href="/#outer-welcome" >Kerri Marusiak</a>
+        <a href="/#welcome" >Kerri Marusiak</a>
     </li>
     
     <li 
@@ -93,29 +96,11 @@
       window.addEventListener(
         'scroll',
         function () {
-          var target = document.querySelector('#nav-kerri');
           var nav = document.querySelector('nav');
-          var anchors = document.querySelectorAll('nav a');
-          var kerr = document.querySelector('#nav-kerri a');
           if (window.pageYOffset > 200) {
-            target.style.display = 'block';
-            // nav.style.backgroundColor = "white";
-            nav.style.height = '50px';
-            nav.style.borderBottom = '2px solid black';
-            anchors.forEach(function (el) {
-              el.style.color = 'black';
-              el.style.fontSize = '18px';
-            });
-            kerr.style.fontSize = '25px';
+            nav.classList.add('scroll');
           } else if (window.pageYOffset < 200) {
-            target.style.display = 'none';
-            nav.style.background = 'none';
-            nav.style.height = '75px';
-            nav.style.border = 'none';
-            anchors.forEach(function (el) {
-              el.style.color = 'black';
-              el.style.fontSize = '25px';
-            });
+            nav.classList.remove('scroll');
           }
         },
         false

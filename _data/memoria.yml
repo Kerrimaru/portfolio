@@ -1,0 +1,7 @@
+  images: 
+  - image: assets/images/memoria/mem-home.png
+    caption: Memoria homepage displaying bookmarks
+  - image: assets/images/memoria/mem-ext.png
+    caption: Memoria in the extension drawer 
+  - image: assets/images/memoria/mem-save.png
+    caption: Simple alert and bookmark added to homepage
