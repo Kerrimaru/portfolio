@@ -44,19 +44,25 @@ h2 { font-size: 28px; }
 
 h3 { font-size: 25px; }
 
-p { font-size: 1rem; line-height: 1.5rem; margin-bottom: 1.5rem; }
+p { font-size: 1rem; line-height: 1.7rem; margin-bottom: 1.5rem; }
 
-#welcome { background: url("/assets/images/bella_profile.jpg"); background-size: cover; }
+#welcome { background: url("/assets/images/bella_profile.jpg"); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh; }
 
 #welcome div.text { height: 100vh; text-align: center; background: rgba(204, 204, 204, 0.55); }
 
-#arrow { text-align: center; }
+.arrow { text-align: center; position: absolute; text-align: center; position: absolute; left: 0; right: 0; bottom: -50px; }
+
+.arrow i:hover { transform: scale(1.2); transition: all 1.5s; }
 
 .highlight, i { color: #07058e; }
 
+.focus { position: relative; }
+
 #focus { font-family: 'Oswald', sans-serif; border-top: 4px solid; color: #07058e; font-weight: bold; font-size: 40px; font-style: normal; }
 
-.tags { text-align: center; font-size: 30px; color: #0f0f0f; font-style: italic; }
+.tags { align-items: baseline; justify-content: center; display: flex; }
+
+.tags p { color: #0f0f0f; font-style: italic; font-size: 30px; margin: 0 10px; }
 
 .details-container { min-height: calc(100vh - 80px); padding-top: 80px; display: flex; flex-direction: column; margin: auto; justify-content: center; }
 
