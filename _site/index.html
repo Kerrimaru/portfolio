@@ -94,10 +94,14 @@
   <div class="text">
     <h1>Kerri Marusiak</h1>
     <div class="tags">
-      Dog-Lover | <a href="#main" id="focus">Web Developer</a> | Woodworker
-    </div>
-    <div id="arrow">
-      <a href="#main"><i class="fas fa-chevron-down fa-3x"></i></a>
+      <p>Dog-Lover</p>
+      <div class="focus">
+        <a href="#main" id="focus">Web Developer</a>
+        <div class="arrow">
+          <a href="#main"><i class="fas fa-chevron-down fa-3x"></i></a>
+        </div>
+      </div>
+      <p>Woodworker</p>
     </div>
   </div>
 </div>
@@ -108,7 +112,7 @@
 
     <p>
       <span class="lead-in"
-        >My name is <b>Kerri,</b> I am a Javascript web developer</span
+        >My name is <b>Kerri,</b> I am a <b>Javascript web developer</b></span
       >
       based in London. I care a lot about building nice things that work well!
     </p>
@@ -129,6 +133,7 @@
       <ul>
         <li>JavaScript</li>
         <li>Angular 2+</li>
+        <li>RxJs</li>
         <li>TypeScript</li>
         <li>HTML, SCSS</li>
         <li>Ruby</li>
@@ -153,19 +158,22 @@
 
   <p>
     <span class="lead-in"
-      >I was hired at <b class="app-title">TouchNote</b> in 2018,</span
-    >
-    as a <b>Frontend Angular 2+</b> developer. From
-    <b>regular maintenance and performance improvements</b>, developing
-    <b>new features</b> from scratch, starting an
-    <b>internal web app wiki</b> to document the product flows and logic, and
-    <b>deploying regular and well-documented releases,</b> I had a hand in many
-    varied aspects of the web app.
+      >I was hired at <b class="app-title">TouchNote</b> in 2018, as a
+      <b>Frontend Angular 2+</b> </span
+    >developer. Here, I was part of the <b>memberships team</b> and developed
+    features for the new membership model that the company adopted shortly after
+    I joined, and also part of the <b>engagement team,</b> which focused on
+    developing feature to keep our existing users active and engaged.
+    Additionally, I took on a variety of more day-to-day tasks such as
+    configuring our regular sales and promotions,
+    <b>maintenance and performance improvements</b>, starting an
+    <b>internal web app wiki</b> to document product flows and logic, and
+    <b>deploying regular and well-documented releases.</b>
   </p>
 
   <p>
-    Arguably my greatest achievment at TouchNote, however, was inspiring the new
-    <b>Pet Policy</b> to be written to allow dogs in the office and the
+    Arguably my greatest achievement at TouchNote might be inspiring the new
+    <b>Pet Policy</b> to be written to allow dogs in the office, and the
     subsequent promotion of my dog Bella to <b>Lead Doggo</b>. She even got her
     own canvas on the company wall!
   </p>
@@ -179,34 +187,41 @@
   <div class="carousel" id="touchnote-carousel">
     
     <div class="carousel-slide" id="touchnote-slide1">
+      <!--  style="background-image: url(assets/images/touchnote/membership.png)" -->
+      <img class="carousel-img" src="assets/images/touchnote/membership.png" />
+      <p class="slide-caption">New membership dashboard</p>
+    </div>
+
+    
+    <div class="carousel-slide" id="touchnote-slide2">
       <!--  style="background-image: url(assets/images/touchnote/csv-1.png)" -->
       <img class="carousel-img" src="assets/images/touchnote/csv-1.png" />
       <p class="slide-caption">CSV address uploader</p>
     </div>
 
     
-    <div class="carousel-slide" id="touchnote-slide2">
+    <div class="carousel-slide" id="touchnote-slide3">
       <!--  style="background-image: url(assets/images/touchnote/csv-2.png)" -->
       <img class="carousel-img" src="assets/images/touchnote/csv-2.png" />
       <p class="slide-caption">Bulk address editor</p>
     </div>
 
     
-    <div class="carousel-slide" id="touchnote-slide3">
+    <div class="carousel-slide" id="touchnote-slide4">
       <!--  style="background-image: url(assets/images/touchnote/canvases.png)" -->
       <img class="carousel-img" src="assets/images/touchnote/canvases.png" />
       <p class="slide-caption">Bella and my canvases</p>
     </div>
 
     
-    <div class="carousel-slide" id="touchnote-slide4">
+    <div class="carousel-slide" id="touchnote-slide5">
       <!--  style="background-image: url(assets/images/touchnote/text-sticker.png)" -->
       <img class="carousel-img" src="assets/images/touchnote/text-sticker.png" />
       <p class="slide-caption">Text stickers feature</p>
     </div>
 
     
-    <div class="carousel-slide" id="touchnote-slide5">
+    <div class="carousel-slide" id="touchnote-slide6">
       <!--  style="background-image: url(assets/images/touchnote/address-book.png)" -->
       <img class="carousel-img" src="assets/images/touchnote/address-book.png" />
       <p class="slide-caption">Address book with relationships feature</p>
@@ -239,6 +254,11 @@
     <label
       class="carousel__indicator"
       onclick="goToSlide(5, 'touchnote')"
+    ></label>
+    
+    <label
+      class="carousel__indicator"
+      onclick="goToSlide(6, 'touchnote')"
     ></label>
     
   </div>
@@ -339,7 +359,7 @@
 <script>
     function initCarousel(name) {
         
-        const length = 10 /2;
+        const length = 12 /2;
         appCarousel[name] = {timer: null, length: length, currentIndex: null};
         goToSlide(1, name);
     }
@@ -407,7 +427,7 @@
       ><b class="app-title">Judith's Kitchen</b>, aka Recipe Hole, is a personal
       project</span
     >
-    which I initially started back when I was first learning <b>Angular</b> and
+    which I initially started when I was first learning <b>Angular</b> and
     <b>Typescript.</b> The app is hosted on <b>Firebase,</b> and uses Firebase's
     <b>realtime database</b> to store recipe data, as well as Firebase
     <b>authentication.</b> I put it on the shelf for a couple of years until
@@ -419,7 +439,7 @@
   <p>
     I added a lot of features, including <b>favouriting</b> and
     <b>search</b> functionality, <b>user notes</b> and
-    <b>date made</b> functionality, and a funky copy paste tool for quickly
+    <b>date made</b> functionality, and a funky copy/paste tool for quickly
     adding ingredients. It has evolved from a basic skills-developing piece into
     a much more well rounded, and useful app which I do currently use
     frequently. I'm still adding to it whenever I find some time.

@@ -1,4 +1,6 @@
   images:
+  - image: assets/images/touchnote/membership.png
+    caption: New membership dashboard
   - image: assets/images/touchnote/csv-1.png
     caption: CSV address uploader
   - image: assets/images/touchnote/csv-2.png
